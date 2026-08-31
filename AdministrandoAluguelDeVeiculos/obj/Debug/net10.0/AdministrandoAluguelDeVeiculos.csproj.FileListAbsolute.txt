@@ -31,3 +31,7 @@
 /media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.pdb
 /media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.genruntimeconfig.cache
 /media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/obj/Debug/net10.0/ref/AdministrandoAluguelDeVeiculos.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/bin/Debug/net10.0/Swashbuckle.AspNetCore.Swagger.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.sourcelink.json
