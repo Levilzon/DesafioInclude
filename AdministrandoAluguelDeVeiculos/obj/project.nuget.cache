@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8c9SonS5JaY=",
+  "success": true,
+  "projectFilePath": "/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.csproj",
+  "expectedPackageFiles": [
+    "/home/levilzon/.nuget/packages/microsoft.aspnetcore.openapi/10.0.11/microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
+    "/home/levilzon/.nuget/packages/microsoft.openapi/2.7.5/microsoft.openapi.2.7.5.nupkg.sha512",
+    "/home/levilzon/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
