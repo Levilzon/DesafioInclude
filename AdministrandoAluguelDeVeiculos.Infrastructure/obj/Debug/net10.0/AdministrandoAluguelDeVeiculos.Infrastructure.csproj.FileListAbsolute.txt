@@ -1,0 +1,15 @@
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/bin/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.deps.json
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/bin/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.runtimeconfig.json
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/bin/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/bin/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.pdb
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.csproj.AssemblyReference.cache
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.AssemblyInfoInputs.cache
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.AssemblyInfo.cs
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.csproj.CoreCompileInputs.cache
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.sourcelink.json
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/obj/Debug/net10.0/refint/AdministrandoAluguelDeVeiculos.Infrastructure.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.pdb
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Infrastructure.genruntimeconfig.cache
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/obj/Debug/net10.0/ref/AdministrandoAluguelDeVeiculos.Infrastructure.dll

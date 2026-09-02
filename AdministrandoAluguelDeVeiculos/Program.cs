@@ -1,3 +1,5 @@
+using AdministrandoAluguelDeVeiculos.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
@@ -5,6 +7,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
+builder.Services.AddInfrastructure();
 
 var app = builder.Build();
 
