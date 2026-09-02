@@ -1,4 +1,6 @@
-﻿namespace AdministrandoAluguelDeVeiculos.Core.Entities;
+﻿using AdministrandoAluguelDeVeiculos.Core.Enums;
+
+namespace AdministrandoAluguelDeVeiculos.Core.Entities;
 
 public partial class Veiculo
 {
@@ -13,5 +15,7 @@ public partial class Veiculo
     public string Placa { get; set; } = null!;
 
     public double ValorDiaria { get; set; }
+
+    public EStatusDisponibilidade StatusDisponibilidade { get; set; }
     
 }
