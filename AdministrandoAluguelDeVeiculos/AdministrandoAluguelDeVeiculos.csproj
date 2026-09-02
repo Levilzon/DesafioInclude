@@ -18,4 +18,8 @@
       <ProjectReference Include="..\AdministrandoVeiculosDeVeiculos.Shared\AdministrandoVeiculosDeVeiculos.Shared.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Controllers\" />
+    </ItemGroup>
+
 </Project>

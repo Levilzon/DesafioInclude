@@ -2,7 +2,7 @@
 
 public partial class Veiculo
 {
-    public int IdVeiculo { get; set; }
+    public Guid IdVeiculo { get; set; }
 
     public string MarcaVeiculo { get; set; } = null!;
 
