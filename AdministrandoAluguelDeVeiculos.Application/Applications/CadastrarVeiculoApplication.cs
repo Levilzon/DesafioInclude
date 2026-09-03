@@ -1,3 +1,4 @@
+using System.IO.Pipes;
 using AdministrandoAluguelDeVeiculos.Core.Entities;
 using AdministrandoAluguelDeVeiculos.Core.Interface.Application;
 using AdministrandoAluguelDeVeiculos.Core.Interface.Repositories;
@@ -20,8 +21,10 @@ public class CadastrarVeiculoApplication : ICadastrarVeiculoApplication
         var veiculo = new Veiculo(
             veiculoInputModels.MarcaVeiculo,
             veiculoInputModels.ModeloVeiculo,
+            veiculoInputModels.Ano,
             veiculoInputModels.Placa,
-            veiculoInputModels.ValorDiaria
+            veiculoInputModels.ValorDiaria,
+            veiculoInputModels.StatusDisponibilidade
             );
         return await _veiculosRepository.CadastrarVeiculosAsync(veiculo);
         

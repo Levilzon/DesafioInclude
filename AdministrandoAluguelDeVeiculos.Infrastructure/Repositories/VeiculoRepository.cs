@@ -12,7 +12,7 @@ public class VeiculoRepository : IVeiculosRepository
 
     public VeiculoRepository(AdministrandoAluguelDeVeiculosContext dbContext)
     {
-        dbContext = _dbcontext;
+        _dbcontext = dbContext;
     }
     
     public async Task<Guid> CadastrarVeiculosAsync(Veiculo veiculo)

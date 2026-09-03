@@ -11,7 +11,7 @@ public static class InfrastructureModel
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
         services.AddDbContext<AdministrandoAluguelDeVeiculosContext>(p =>
-            p.UseNpgsql("Server =localhost; Port = 5432; Database= administrando_aluguel_veiculos; User Id = postgres;Password = 2445Cem3"));
+            p.UseNpgsql("Server=localhost;Port=5432;Database=administrando_aluguel_veiculos;User Id=postgres;Password=2445Cem3"));
         
         services.AddScoped<DbContext, AdministrandoAluguelDeVeiculosContext>();
         services.AddScoped<IVeiculosRepository, VeiculoRepository>();

@@ -4,7 +4,8 @@ namespace AdministrandoAluguelDeVeiculos.Core.Entities;
 
 public partial class Veiculo
 {
-    public Veiculo(string marcaVeiculo, string modeloVeiculo, int ano, string placa, double valorDiaria)
+    public Veiculo() { }
+    public Veiculo(string marcaVeiculo, string modeloVeiculo, int ano, string placa, double valorDiaria, EStatusDisponibilidade statusDisponibilidade)
     {
         IdVeiculo = Guid.NewGuid();
         MarcaVeiculo = marcaVeiculo;
@@ -14,12 +15,7 @@ public partial class Veiculo
         ValorDiaria = valorDiaria;
         StatusDisponibilidade = EStatusDisponibilidade.Disponivel;
     }
-
-    public Veiculo(string marcaVeiculo, string modeloVeiculo, string placa, double valorDiaria)
-    {
-        throw new NotImplementedException();
-    }
-
+    
     public Guid IdVeiculo { get;}
 
     public string MarcaVeiculo { get;} 
