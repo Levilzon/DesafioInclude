@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "24rE3R5r+94=",
+  "dgSpecHash": "In4//9FBZF4=",
   "success": true,
   "projectFilePath": "/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Application/AdministrandoAluguelDeVeiculos.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/levilzon/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/11.0.0-preview.7.26381.103/microsoft.extensions.dependencyinjection.abstractions.11.0.0-preview.7.26381.103.nupkg.sha512"
+  ],
   "logs": []
 }
