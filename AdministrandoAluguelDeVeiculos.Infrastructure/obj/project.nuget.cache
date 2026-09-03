@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "upEvcPU2EfI=",
+  "dgSpecHash": "xVCgpNeBb9U=",
   "success": true,
   "projectFilePath": "/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Infrastructure/AdministrandoAluguelDeVeiculos.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,7 @@
     "/home/levilzon/.nuget/packages/microsoft.entityframeworkcore.analyzers/10.0.11/microsoft.entityframeworkcore.analyzers.10.0.11.nupkg.sha512",
     "/home/levilzon/.nuget/packages/microsoft.entityframeworkcore.design/10.0.11/microsoft.entityframeworkcore.design.10.0.11.nupkg.sha512",
     "/home/levilzon/.nuget/packages/microsoft.entityframeworkcore.relational/10.0.11/microsoft.entityframeworkcore.relational.10.0.11.nupkg.sha512",
-    "/home/levilzon/.nuget/packages/microsoft.entityframeworkcore.tools/11.0.0-preview.7.26381.103/microsoft.entityframeworkcore.tools.11.0.0-preview.7.26381.103.nupkg.sha512",
+    "/home/levilzon/.nuget/packages/microsoft.entityframeworkcore.tools/10.0.11/microsoft.entityframeworkcore.tools.10.0.11.nupkg.sha512",
     "/home/levilzon/.nuget/packages/microsoft.extensions.caching.abstractions/10.0.11/microsoft.extensions.caching.abstractions.10.0.11.nupkg.sha512",
     "/home/levilzon/.nuget/packages/microsoft.extensions.caching.memory/10.0.11/microsoft.extensions.caching.memory.10.0.11.nupkg.sha512",
     "/home/levilzon/.nuget/packages/microsoft.extensions.configuration.abstractions/10.0.11/microsoft.extensions.configuration.abstractions.10.0.11.nupkg.sha512",

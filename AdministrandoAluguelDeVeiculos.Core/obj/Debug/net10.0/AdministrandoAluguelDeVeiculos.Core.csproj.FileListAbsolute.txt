@@ -1,0 +1,12 @@
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Core/bin/Debug/net10.0/AdministrandoAluguelDeVeiculos.Core.deps.json
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Core/bin/Debug/net10.0/AdministrandoAluguelDeVeiculos.Core.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Core/bin/Debug/net10.0/AdministrandoAluguelDeVeiculos.Core.pdb
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Core/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Core.GeneratedMSBuildEditorConfig.editorconfig
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Core/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Core.AssemblyInfoInputs.cache
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Core/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Core.AssemblyInfo.cs
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Core/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Core.csproj.CoreCompileInputs.cache
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Core/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Core.sourcelink.json
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Core/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Core.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Core/obj/Debug/net10.0/refint/AdministrandoAluguelDeVeiculos.Core.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Core/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.Core.pdb
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.Core/obj/Debug/net10.0/ref/AdministrandoAluguelDeVeiculos.Core.dll

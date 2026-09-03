@@ -1,0 +1,12 @@
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoVeiculosDeVeiculos.Shared/bin/Debug/net10.0/AdministrandoVeiculosDeVeiculos.Shared.deps.json
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoVeiculosDeVeiculos.Shared/bin/Debug/net10.0/AdministrandoVeiculosDeVeiculos.Shared.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoVeiculosDeVeiculos.Shared/bin/Debug/net10.0/AdministrandoVeiculosDeVeiculos.Shared.pdb
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoVeiculosDeVeiculos.Shared/obj/Debug/net10.0/AdministrandoVeiculosDeVeiculos.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoVeiculosDeVeiculos.Shared/obj/Debug/net10.0/AdministrandoVeiculosDeVeiculos.Shared.AssemblyInfoInputs.cache
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoVeiculosDeVeiculos.Shared/obj/Debug/net10.0/AdministrandoVeiculosDeVeiculos.Shared.AssemblyInfo.cs
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoVeiculosDeVeiculos.Shared/obj/Debug/net10.0/AdministrandoVeiculosDeVeiculos.Shared.csproj.CoreCompileInputs.cache
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoVeiculosDeVeiculos.Shared/obj/Debug/net10.0/AdministrandoVeiculosDeVeiculos.Shared.sourcelink.json
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoVeiculosDeVeiculos.Shared/obj/Debug/net10.0/AdministrandoVeiculosDeVeiculos.Shared.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoVeiculosDeVeiculos.Shared/obj/Debug/net10.0/refint/AdministrandoVeiculosDeVeiculos.Shared.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoVeiculosDeVeiculos.Shared/obj/Debug/net10.0/AdministrandoVeiculosDeVeiculos.Shared.pdb
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoVeiculosDeVeiculos.Shared/obj/Debug/net10.0/ref/AdministrandoVeiculosDeVeiculos.Shared.dll
