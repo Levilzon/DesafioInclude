@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/0W97rNHEvQ=",
+  "dgSpecHash": "94r81WPgB74=",
   "success": true,
   "projectFilePath": "/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos.csproj",
   "expectedPackageFiles": [
+    "/home/levilzon/.nuget/packages/fluentvalidation/10.3.0/fluentvalidation.10.3.0.nupkg.sha512",
     "/home/levilzon/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/levilzon/.nuget/packages/microsoft.aspnetcore.openapi/10.0.11/microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
     "/home/levilzon/.nuget/packages/microsoft.build.framework/18.0.2/microsoft.build.framework.18.0.2.nupkg.sha512",

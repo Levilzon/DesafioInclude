@@ -5,7 +5,7 @@ namespace AdministrandoAluguelDeVeiculos.Infrastructure;
 
 public class AdministrandoAluguelDeVeiculosContext(DbContextOptions options) : DbContext(options)
 {
-    public virtual DbSet<Aluguel> Aluguels { get; set; }
+   // public virtual DbSet<Aluguel> Aluguels { get; set; }
 
     public virtual DbSet<Veiculo> Veiculos { get; set; }
    

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdministrandoVeiculosDeVeiculos.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30b63a588566c6f3522100c7ec1124eb272be647")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5b4622a8835bde84ed8790755e7861576dc4168")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdministrandoVeiculosDeVeiculos.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdministrandoVeiculosDeVeiculos.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
