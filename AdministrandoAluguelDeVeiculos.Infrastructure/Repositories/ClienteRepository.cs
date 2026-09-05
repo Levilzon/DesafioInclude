@@ -13,8 +13,8 @@ public class ClienteRepository : IClienteRepository
     {
         _dbContext = dbContext;
     }
-
-
+    
+    
     public async Task<Guid> CadastrarClienteAsync(Cliente cliente)
     {
         var entidade = await _dbContext.Clientes.AddAsync(cliente);
