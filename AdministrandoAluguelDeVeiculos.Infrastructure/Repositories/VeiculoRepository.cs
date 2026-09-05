@@ -2,7 +2,6 @@ using System;
 using System.Threading.Tasks;
 using AdministrandoAluguelDeVeiculos.Core.Entities;
 using AdministrandoAluguelDeVeiculos.Core.Interface.Repositories;
-using Microsoft.Extensions.Configuration;
 
 namespace AdministrandoAluguelDeVeiculos.Infrastructure.Repositories;
 

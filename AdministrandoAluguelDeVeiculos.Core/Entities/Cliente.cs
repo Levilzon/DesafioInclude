@@ -16,10 +16,10 @@ public class Cliente
     
     
     
-    public Guid IdCliente { get; }
-    public string ClienteNome { get; }
-    public string ClienteSobrenome { get;}
-    public string ClienteSenha { get; }
-    public string ClienteEmail { get;}
-    public string ClienteContato { get;}
+    public Guid IdCliente { get;  }
+    public string ClienteNome { get;  }
+    public string ClienteSobrenome { get;  }
+    public string ClienteSenha { get;  }
+    public string ClienteEmail { get;  }
+    public string ClienteContato { get; }
 }
