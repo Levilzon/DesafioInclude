@@ -2,21 +2,13 @@ using AdministrandoAluguelDeVeiculos.Core.Entities;
 
 namespace AdministrandoAluguelDeVeiculos.Core.Models.InputModels;
 
-public class ClienteInputModel
+public class ClienteInputModel :ClienteBaseInputModel
 {
-    public ClienteInputModel(string clienteNOme, string clienteSobrenome, string clienteSenha, string clienteEmail, string clienteContato)
+    public ClienteInputModel(string clienteNome, string clienteSobrenome, string clienteSenha, string clienteEmail, string clienteContato) : base(clienteNome, clienteSobrenome, clienteEmail, clienteContato)
     {
-        ClienteNome = clienteNOme;
-        ClienteSobrenome = clienteSobrenome;
         ClienteSenha = clienteSenha;
-        ClienteEmail = clienteEmail;
-        ClienteContato = clienteContato;
     }
     
-    public string ClienteNome { get; }
-    public string ClienteSobrenome { get;}
     public string ClienteSenha { get; }
-    public string ClienteEmail { get; }
-    public string ClienteContato { get; }
 
 }

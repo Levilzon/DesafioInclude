@@ -19,11 +19,33 @@ public class Cliente
     
     
     public Guid IdCliente { get;  }
-    public string ClienteNome { get;  }
-    public string ClienteSobrenome { get;  }
+    public string ClienteNome { get; private set; }
+    public string ClienteSobrenome { get; private set; }
     public string ClienteSenha { get;  }
-    public string ClienteEmail { get;  }
-    public string ClienteContato { get; }
+    public string ClienteEmail { get; private set; }
+    public string ClienteContato { get; private set; }
 
-   
+    public Cliente SetClienteNome(string clienteNome)
+    {
+        ClienteNome = clienteNome;
+        return this;
+    }
+
+    public Cliente SetSobreNome(string clienteSobreNome)
+    {
+        ClienteSobrenome = clienteSobreNome;
+        return this;
+    }
+
+    public Cliente SetClienteEmail(string clienteEmail)
+    {
+        ClienteEmail = clienteEmail;
+        return this;
+    }
+
+    public Cliente SetClienteContato(string clienteContato)
+    {
+        ClienteContato = clienteContato;
+        return this;
+    }
 }

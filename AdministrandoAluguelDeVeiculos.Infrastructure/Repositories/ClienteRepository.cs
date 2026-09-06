@@ -35,4 +35,10 @@ public class ClienteRepository : IClienteRepository
         var cliente = await _dbContext.Clientes.FirstOrDefaultAsync(c => c.IdCliente == id);
         return cliente;
     }
+
+    public Task SaveChangesAsync()
+    {
+        return _dbContext.SaveChangesAsync();
+    }
+    
 }

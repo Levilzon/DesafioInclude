@@ -17,6 +17,6 @@ public class ListarTodosOsClientesApplicationApplication : IListarTodosOsCliente
     public async Task<IEnumerable<ClienteViewModel>> ListarTodosOsClientesAsync()
     {
         var clientes = await _clienteRepository.ListarTodosOsClientesAsync();
-        return clientes.Select(c => new ClienteViewModel(c.IdCliente,c.ClienteNome,c.ClienteEmail,c.ClienteContato));
+        return clientes.Select(c => new ClienteViewModel(c.IdCliente,c.ClienteNome,c.ClienteSobrenome ,c.ClienteEmail,c.ClienteContato));
     }
 }

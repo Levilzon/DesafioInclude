@@ -5,11 +5,11 @@ using AdministrandoAluguelDeVeiculos.Core.Models.ViewModel;
 
 namespace AdministrandoAluguelDeVeiculos.Application.Applications;
 
-public class BuscarClienesPorIdApplication : IBuscarClientePorIdApplication
+public class BuscarClientesPorIdApplication : IBuscarClientePorIdApplication
 {
     private IClienteRepository _clienteRepository;
     
-    public BuscarClienesPorIdApplication(IClienteRepository clienteRepository)
+    public BuscarClientesPorIdApplication(IClienteRepository clienteRepository)
     {
         _clienteRepository = clienteRepository;
     }

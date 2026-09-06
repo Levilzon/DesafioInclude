@@ -11,13 +11,17 @@ public class ClienteController : MainController
     private readonly ICadastrarClienteApplication  _cadastrarClienteApplication;
     private readonly IListarTodosOsClientesApplication _listarTodosOsClientesApplication;
     private readonly IBuscarClientePorIdApplication _buscarClientePorIdApplication;
+    private readonly IClienteAtualizarApplication _clienteAtualizarApplication;
+    
     public ClienteController(ICadastrarClienteApplication cadastrarClienteApplication,
         IListarTodosOsClientesApplication listarTodosOsClientesApplication,
-        IBuscarClientePorIdApplication buscarClientePorIdApplication)
+        IBuscarClientePorIdApplication buscarClientePorIdApplication,
+        IClienteAtualizarApplication clienteAtualizarApplication)
     {
         _cadastrarClienteApplication = cadastrarClienteApplication;
         _listarTodosOsClientesApplication = listarTodosOsClientesApplication;
         _buscarClientePorIdApplication = buscarClientePorIdApplication;
+        _clienteAtualizarApplication = clienteAtualizarApplication;
     }
 
     [HttpPost]
@@ -41,5 +45,13 @@ public class ClienteController : MainController
         if (cliente == null) 
             return NotFound();
         return Ok(cliente);
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> AtualizarClienteAsync([FromRoute] Guid id,
+        [FromBody] ClienteAtualizarInputModel clienteAtualizarInputModel)
+    {
+        await _clienteAtualizarApplication.ClienteAtualizarAsync(id, clienteAtualizarInputModel);
+        return  NoContent();
     }
 }

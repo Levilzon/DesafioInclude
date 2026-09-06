@@ -10,6 +10,7 @@ public static class ClienteMapper
         return new ClienteViewModel(
             cliente.IdCliente,
             cliente.ClienteNome,
+            cliente.ClienteSobrenome,
             cliente.ClienteEmail,
             cliente.ClienteContato);
     }
