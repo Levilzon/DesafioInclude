@@ -1,3 +1,5 @@
+using AdministrandoAluguelDeVeiculos.Core.Models.ViewModel;
+
 namespace AdministrandoAluguelDeVeiculos.Core.Entities;
 
 public class Cliente
@@ -22,4 +24,6 @@ public class Cliente
     public string ClienteSenha { get;  }
     public string ClienteEmail { get;  }
     public string ClienteContato { get; }
+
+   
 }

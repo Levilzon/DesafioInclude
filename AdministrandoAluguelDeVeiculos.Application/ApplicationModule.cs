@@ -10,6 +10,8 @@ public static class  ApplicationModule
     {
         services.AddScoped<ICadastrarVeiculoApplication, CadastrarVeiculoApplication>();
         services.AddScoped<ICadastrarClienteApplication, CadastrarClienteApplication>();
+        services.AddScoped<IListarTodosOsClientesApplication, ListarTodosOsClientesApplicationApplication>();
+        services.AddScoped<IBuscarClientePorIdApplication, BuscarClienesPorIdApplication>();
         return services;
     }
 }
