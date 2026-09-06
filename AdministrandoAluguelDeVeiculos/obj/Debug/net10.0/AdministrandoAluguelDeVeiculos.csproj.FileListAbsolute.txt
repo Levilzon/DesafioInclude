@@ -133,3 +133,7 @@
 /media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.pdb
 /media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/obj/Debug/net10.0/AdministrandoAluguelDeVeiculos.genruntimeconfig.cache
 /media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/obj/Debug/net10.0/ref/AdministrandoAluguelDeVeiculos.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/bin/Debug/net10.0/FluentValidation.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/bin/Debug/net10.0/FluentValidation.DependencyInjectionExtensions.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/bin/Debug/net10.0/SharpGrip.FluentValidation.AutoValidation.Mvc.dll
+/media/levilzon/Novo volume/ESTUDO/.NET/AdministrandoAluguelDeVeiculos/AdministrandoAluguelDeVeiculos/bin/Debug/net10.0/SharpGrip.FluentValidation.AutoValidation.Shared.dll

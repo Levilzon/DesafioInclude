@@ -2,9 +2,9 @@ using AdministrandoAluguelDeVeiculos.Core.Enums;
 
 namespace AdministrandoAluguelDeVeiculos.Core.Models.InputModels;
 
-public class VeiculoInputModels
+public class VeiculoInputModel
 {
-        public VeiculoInputModels(string marcaVeiculo, string modeloVeiculo, int ano, string placa, double valorDiaria)
+        public VeiculoInputModel(string marcaVeiculo, string modeloVeiculo, int ano, string placa, double valorDiaria)
         {
                 MarcaVeiculo = marcaVeiculo;
                 ModeloVeiculo = modeloVeiculo;

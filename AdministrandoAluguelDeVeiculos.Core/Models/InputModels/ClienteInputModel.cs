@@ -2,9 +2,9 @@ using AdministrandoAluguelDeVeiculos.Core.Entities;
 
 namespace AdministrandoAluguelDeVeiculos.Core.Models.InputModels;
 
-public class ClienteInputModels
+public class ClienteInputModel
 {
-    public ClienteInputModels(string clienteNOme, string clienteSobrenome, string clienteSenha, string clienteEmail, string clienteContato)
+    public ClienteInputModel(string clienteNOme, string clienteSobrenome, string clienteSenha, string clienteEmail, string clienteContato)
     {
         ClienteNome = clienteNOme;
         ClienteSobrenome = clienteSobrenome;

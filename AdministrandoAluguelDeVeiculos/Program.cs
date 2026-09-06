@@ -1,6 +1,6 @@
 using AdministrandoAluguelDeVeiculos.Application;
 using AdministrandoAluguelDeVeiculos.Infrastructure;
-
+using AdministrandoAluguelDeVeiculos.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
@@ -10,7 +10,9 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services
     .AddInfrastructure()
-    .AddApplication();
+    .AddApplication()
+    .AddAutoValidators();
+   
 
 var app = builder.Build();
 

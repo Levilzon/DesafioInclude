@@ -5,5 +5,5 @@ namespace AdministrandoAluguelDeVeiculos.Core.Interface.Application;
 
 public interface ICadastrarClienteApplication
 {
-    Task<Guid> CadastrarClienteAsync(ClienteInputModels clienteInputModels);
+    Task<Guid> CadastrarClienteAsync(ClienteInputModel clienteInputModel);
 }

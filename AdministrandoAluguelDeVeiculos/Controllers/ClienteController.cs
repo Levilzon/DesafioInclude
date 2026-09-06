@@ -16,7 +16,7 @@ public class ClienteController : MainController
     }
 
     [HttpPost]
-    public async Task<ActionResult> CadastrarClienteAsync([FromBody] ClienteInputModels clienteInputModel)
+    public async Task<ActionResult> CadastrarClienteAsync([FromBody] ClienteInputModel clienteInputModel)
     {
         var id = await _cadastrarClienteApplication.CadastrarClienteAsync(clienteInputModel);
         return Ok(id);

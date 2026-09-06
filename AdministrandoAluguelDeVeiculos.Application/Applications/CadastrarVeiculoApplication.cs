@@ -16,15 +16,15 @@ public class CadastrarVeiculoApplication : ICadastrarVeiculoApplication
     }
 
 
-    public async Task<Guid> CadastrarVeiculoAsync(VeiculoInputModels veiculoInputModels)
+    public async Task<Guid> CadastrarVeiculoAsync(VeiculoInputModel veiculoInputModel)
     {
         var veiculo = new Veiculo(
-            veiculoInputModels.MarcaVeiculo,
-            veiculoInputModels.ModeloVeiculo,
-            veiculoInputModels.Ano,
-            veiculoInputModels.Placa,
-            veiculoInputModels.ValorDiaria,
-            veiculoInputModels.StatusDisponibilidade
+            veiculoInputModel.MarcaVeiculo,
+            veiculoInputModel.ModeloVeiculo,
+            veiculoInputModel.Ano,
+            veiculoInputModel.Placa,
+            veiculoInputModel.ValorDiaria,
+            veiculoInputModel.StatusDisponibilidade
             );
         return await _veiculosRepository.CadastrarVeiculosAsync(veiculo);
         

@@ -15,14 +15,14 @@ public class CadastrarClienteApplication : ICadastrarClienteApplication
         _clienteRepository = clienteRepository;
     }
     
-    public async Task<Guid> CadastrarClienteAsync(ClienteInputModels clienteInputModels)
+    public async Task<Guid> CadastrarClienteAsync(ClienteInputModel clienteInputModel)
     {
         var cliente = new Cliente(
-                clienteInputModels.ClienteNome,
-                clienteInputModels.ClienteSobrenome,
-                clienteInputModels.ClienteSenha,
-                clienteInputModels.ClienteEmail,
-                clienteInputModels.ClienteContato
+                clienteInputModel.ClienteNome,
+                clienteInputModel.ClienteSobrenome,
+                clienteInputModel.ClienteSenha,
+                clienteInputModel.ClienteEmail,
+                clienteInputModel.ClienteContato
                 
             );
         return await _clienteRepository.CadastrarClienteAsync(cliente);

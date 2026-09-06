@@ -14,9 +14,9 @@ public class VeiculoController : MainController
     }
     
     [HttpPost]
-    public async Task<IActionResult> CadastrarVeiculoAsync([FromBody] VeiculoInputModels veiculoInputModels)
+    public async Task<IActionResult> CadastrarVeiculoAsync([FromBody] VeiculoInputModel veiculoInputModel)
     {
-        var id = await _cadastrarVeiculoApplication.CadastrarVeiculoAsync(veiculoInputModels);
+        var id = await _cadastrarVeiculoApplication.CadastrarVeiculoAsync(veiculoInputModel);
         return Ok(id);
     }
 }
