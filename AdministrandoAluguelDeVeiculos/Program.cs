@@ -1,6 +1,8 @@
 using AdministrandoAluguelDeVeiculos.Application;
 using AdministrandoAluguelDeVeiculos.Infrastructure;
 using AdministrandoAluguelDeVeiculos.Extensions;
+using AdministrandoAluguelDeVeiculos.Middlewares;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
@@ -11,7 +13,8 @@ builder.Services.AddOpenApi();
 builder.Services
     .AddInfrastructure()
     .AddApplication()
-    .AddAutoValidators();
+    .AddAutoValidators()
+    .AddMiddleware();
    
 
 var app = builder.Build();
@@ -30,6 +33,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<GlobalExceptionHandler>();
 
 app.MapControllers();
 
