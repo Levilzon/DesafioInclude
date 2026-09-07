@@ -1,5 +1,6 @@
 using AdministrandoAluguelDeVeiculos.Core.Entities;
 using AdministrandoAluguelDeVeiculos.Core.Interface.Application;
+using AdministrandoAluguelDeVeiculos.Core.Interface.Notifications;
 using AdministrandoAluguelDeVeiculos.Core.Models.InputModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,30 +13,34 @@ public class ClienteController : MainController
     private readonly IListarTodosOsClientesApplication _listarTodosOsClientesApplication;
     private readonly IBuscarClientePorIdApplication _buscarClientePorIdApplication;
     private readonly IClienteAtualizarApplication _clienteAtualizarApplication;
+    private readonly INotificador _notificador;
     
-    public ClienteController(ICadastrarClienteApplication cadastrarClienteApplication,
+    public ClienteController(
+        ICadastrarClienteApplication cadastrarClienteApplication,
         IListarTodosOsClientesApplication listarTodosOsClientesApplication,
         IBuscarClientePorIdApplication buscarClientePorIdApplication,
-        IClienteAtualizarApplication clienteAtualizarApplication)
+        IClienteAtualizarApplication clienteAtualizarApplication,
+        INotificador notificador) : base(notificador)
     {
         _cadastrarClienteApplication = cadastrarClienteApplication;
         _listarTodosOsClientesApplication = listarTodosOsClientesApplication;
         _buscarClientePorIdApplication = buscarClientePorIdApplication;
         _clienteAtualizarApplication = clienteAtualizarApplication;
+        _notificador = notificador;
     }
 
     [HttpPost]
     public async Task<ActionResult> CadastrarClienteAsync([FromBody] ClienteInputModel clienteInputModel)
     {
         var id = await _cadastrarClienteApplication.CadastrarClienteAsync(clienteInputModel);
-        return Ok(id);
+        return RespostaPersonalizada(Created(id));
     }
 
     [HttpGet]
     public async Task<IActionResult> ListarTodosOsClientesAsync()
     {
         var clientes = await _listarTodosOsClientesApplication.ListarTodosOsClientesAsync();
-        return Ok(clientes);
+        return RespostaPersonalizada(Ok(clientes));
     }
 
     [HttpGet("{id}")]
@@ -44,7 +49,7 @@ public class ClienteController : MainController
         var cliente = await _buscarClientePorIdApplication.BuscarClientePorIdAsync(id);
         if (cliente == null) 
             return NotFound();
-        return Ok(cliente);
+        return RespostaPersonalizada(Ok(cliente));
     }
 
     [HttpPut("{id}")]
@@ -52,6 +57,6 @@ public class ClienteController : MainController
         [FromBody] ClienteAtualizarInputModel clienteAtualizarInputModel)
     {
         await _clienteAtualizarApplication.ClienteAtualizarAsync(id, clienteAtualizarInputModel);
-        return  NoContent();
+        return  RespostaPersonalizada(NoContent());
     }
 }
