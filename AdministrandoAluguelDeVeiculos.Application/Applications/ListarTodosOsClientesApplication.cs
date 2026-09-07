@@ -4,12 +4,12 @@ using AdministrandoAluguelDeVeiculos.Core.Models.ViewModel;
 
 namespace AdministrandoAluguelDeVeiculos.Application.Applications;
 
-public class ListarTodosOsClientesApplicationApplication : IListarTodosOsClientesApplication
+public class ListarTodosOsClientesApplication : IListarTodosOsClientesApplication
 {
     
     private readonly IClienteRepository _clienteRepository;
 
-    public ListarTodosOsClientesApplicationApplication(IClienteRepository clienteRepository)
+    public ListarTodosOsClientesApplication(IClienteRepository clienteRepository)
     {
         _clienteRepository = clienteRepository;
     }

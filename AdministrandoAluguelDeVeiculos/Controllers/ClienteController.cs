@@ -13,27 +13,27 @@ public class ClienteController : MainController
     private readonly IListarTodosOsClientesApplication _listarTodosOsClientesApplication;
     private readonly IBuscarClientePorIdApplication _buscarClientePorIdApplication;
     private readonly IClienteAtualizarApplication _clienteAtualizarApplication;
-    private readonly INotificador _notificador;
     
     public ClienteController(
         ICadastrarClienteApplication cadastrarClienteApplication,
         IListarTodosOsClientesApplication listarTodosOsClientesApplication,
         IBuscarClientePorIdApplication buscarClientePorIdApplication,
         IClienteAtualizarApplication clienteAtualizarApplication,
-        INotificador notificador) : base(notificador)
+        INotificador  notificador) : base(notificador)
+         
     {
         _cadastrarClienteApplication = cadastrarClienteApplication;
         _listarTodosOsClientesApplication = listarTodosOsClientesApplication;
         _buscarClientePorIdApplication = buscarClientePorIdApplication;
         _clienteAtualizarApplication = clienteAtualizarApplication;
-        _notificador = notificador;
+        
     }
 
     [HttpPost]
     public async Task<ActionResult> CadastrarClienteAsync([FromBody] ClienteInputModel clienteInputModel)
     {
         var id = await _cadastrarClienteApplication.CadastrarClienteAsync(clienteInputModel);
-        return RespostaPersonalizada(Created(id));
+        return RespostaPersonalizada(Created($"/api/cliente/{id}",id));
     }
 
     [HttpGet]

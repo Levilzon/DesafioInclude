@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using AdministrandoAluguelDeVeiculos.Core.Entities;
 using AdministrandoAluguelDeVeiculos.Core.Interface.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace AdministrandoAluguelDeVeiculos.Infrastructure.Repositories;
 
@@ -19,5 +21,11 @@ public class VeiculoRepository : IVeiculosRepository
        var entidade = await _dbcontext.Veiculos.AddAsync(veiculo);
        await _dbcontext.SaveChangesAsync();
        return entidade.Entity.IdVeiculo;
+    }
+
+    public async Task<IEnumerable<Veiculo>> ListarVeiculosAsync()
+    {
+        var veiculos = await _dbcontext.Veiculos.ToListAsync();
+        return veiculos;
     }
 }

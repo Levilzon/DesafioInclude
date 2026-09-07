@@ -25,5 +25,6 @@ public class VeiculoConfiguration : IEntityTypeConfiguration<Veiculo>
         entity.Property(e => e.Placa)
             .HasMaxLength(10)
             .HasColumnName("placa");
-        entity.Property(e => e.ValorDiaria).HasColumnName("valor_diaria");    }
+        entity.Property(e => e.ValorDiaria).HasColumnName("valor_diaria");
+    }
 }

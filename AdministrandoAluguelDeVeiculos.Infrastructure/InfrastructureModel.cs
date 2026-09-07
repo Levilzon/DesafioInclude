@@ -16,6 +16,7 @@ public static class InfrastructureModel
         services.AddScoped<DbContext, AdministrandoAluguelDeVeiculosContext>();
         services.AddScoped<IVeiculosRepository, VeiculoRepository>();
         services.AddScoped<IClienteRepository, ClienteRepository>();
+      //  services.AddScoped<IAluguelRepository, AluguelRepositories>();
         return services;
     }
 }

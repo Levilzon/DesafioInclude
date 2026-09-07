@@ -10,7 +10,6 @@ public class ClienteBaseValidator<T>: AbstractValidator<T> where T: ClienteBaseI
         RuleFor(c => c.ClienteNome)
             .NotEmpty()
             .WithMessage("Informe o seu primeiro nome.");
-        
         RuleFor(c => c.ClienteSobrenome)
             .NotEmpty()
             .WithMessage("Informe seu sobrenome.");

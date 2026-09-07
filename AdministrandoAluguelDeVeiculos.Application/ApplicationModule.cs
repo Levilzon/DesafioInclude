@@ -11,8 +11,9 @@ public static class  ApplicationModule
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
         services.AddScoped<ICadastrarVeiculoApplication, CadastrarVeiculoApplication>();
+        services.AddScoped<IListarTodosOsVeiculosApplication, ListarTodosOsVeiculosApplication>();
         services.AddScoped<ICadastrarClienteApplication, CadastrarClienteApplication>();
-        services.AddScoped<IListarTodosOsClientesApplication, ListarTodosOsClientesApplicationApplication>();
+        services.AddScoped<IListarTodosOsClientesApplication, ListarTodosOsClientesApplication>();
         services.AddScoped<IBuscarClientePorIdApplication, BuscarClientesPorIdApplication>();
         services.AddScoped<IClienteAtualizarApplication, ClienteAtualizarApplication>();
         services.AddScoped<INotificador, Notificador>();

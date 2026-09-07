@@ -9,11 +9,14 @@ public class VeiculoController : MainController
 {
     private readonly ICadastrarVeiculoApplication _cadastrarVeiculoApplication;
     private readonly INotificador _notificador;
+    private readonly IListarTodosOsVeiculosApplication _listarTodosOsVeiculosApplication;
 
-    public VeiculoController(ICadastrarVeiculoApplication cadastrarVeiculoApplication,
+    public VeiculoController(ICadastrarVeiculoApplication cadastrarVeiculoApplication, 
+        IListarTodosOsVeiculosApplication listarTodosOsVeiculosApplication,
         INotificador notificador) : base(notificador)
     {
         _cadastrarVeiculoApplication = cadastrarVeiculoApplication;
+        _listarTodosOsVeiculosApplication = listarTodosOsVeiculosApplication;
         _notificador = notificador;
     }
     
@@ -22,5 +25,12 @@ public class VeiculoController : MainController
     {
         var id = await _cadastrarVeiculoApplication.CadastrarVeiculoAsync(veiculoInputModel);
         return Ok(id);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> ListarTodosOsVeiculosAsync()
+    {
+        var veiculos = await _listarTodosOsVeiculosApplication.ListarTodosOsVeiculosAsync();
+        return RespostaPersonalizada(Ok(veiculos));
     }
 }

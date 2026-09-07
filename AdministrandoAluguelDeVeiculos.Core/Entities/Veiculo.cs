@@ -5,7 +5,8 @@ namespace AdministrandoAluguelDeVeiculos.Core.Entities;
 public partial class Veiculo
 {
     public Veiculo() { }
-    public Veiculo(string marcaVeiculo, string modeloVeiculo, int ano, string placa, double valorDiaria, EStatusDisponibilidade statusDisponibilidade)
+    public Veiculo(string marcaVeiculo, string modeloVeiculo, int ano, string placa,
+        double valorDiaria, EStatusDisponibilidade statusDisponibilidade)
     {
         IdVeiculo = Guid.NewGuid();
         MarcaVeiculo = marcaVeiculo;

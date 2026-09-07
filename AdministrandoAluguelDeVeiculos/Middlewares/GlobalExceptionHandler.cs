@@ -25,7 +25,7 @@ public class GlobalExceptionHandler :IMiddleware
         {
             context.Response.ContentType = "application/json";
             
-            var mensagemDeErro = Variaveis.Geral.ENV == "prd"
+            var mensagemDeErro = Variaveis.Geral.ENV == "Development"
                 ? (ex.InnerException?.Message ?? ex.Message ?? MENSAGEM_PADRAO) : MENSAGEM_PADRAO;
 
             if (context != null)
