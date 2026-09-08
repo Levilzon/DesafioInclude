@@ -1,4 +1,5 @@
 ﻿using AdministrandoAluguelDeVeiculos.Core.Enums;
+using AdministrandoAluguelDeVeiculos.Core.Models.ViewModel;
 
 namespace AdministrandoAluguelDeVeiculos.Core.Entities;
 
@@ -14,21 +15,56 @@ public partial class Veiculo
         Ano = ano;
         Placa = placa;
         ValorDiaria = valorDiaria;
-        StatusDisponibilidade = EStatusDisponibilidade.Disponivel;
+        StatusDisponibilidade = EStatusDisponibilidade.disponivel;
     }
     
     public Guid IdVeiculo { get;}
 
-    public string MarcaVeiculo { get;} 
+    public string MarcaVeiculo { get; private set; } 
 
-    public string ModeloVeiculo { get;} 
+    public string ModeloVeiculo { get; private set; } 
 
-    public int Ano { get;}
+    public int Ano { get; private set; }
 
-    public string Placa { get;} 
+    public string Placa { get; private set; } 
 
-    public double ValorDiaria { get;}
+    public double ValorDiaria { get; private set; }
 
-    public EStatusDisponibilidade StatusDisponibilidade { get;}
-    
+    public EStatusDisponibilidade StatusDisponibilidade { get; private set; }
+
+    public Veiculo SetMarcaVeiculo(string marcaVeiculo)
+    {
+        MarcaVeiculo = marcaVeiculo;
+        return this;
+    }
+
+    public Veiculo SetModeloVeiculo(string modeloVeiculo)
+    {
+        ModeloVeiculo = modeloVeiculo;
+        return this;
+    }
+
+    public Veiculo SetAno(int ano)
+    {
+        Ano = ano;
+        return this;
+    }
+
+    public Veiculo SetPlaca(string placa)
+    {
+        Placa = placa;
+        return this;
+    }
+
+    public Veiculo SetValorDiaria(double valorDiaria)
+    {
+        ValorDiaria = valorDiaria;
+        return this;
+    }
+
+    public Veiculo SetStatusDisponibilidade(EStatusDisponibilidade statusDisponibilidade)
+    {
+        StatusDisponibilidade = statusDisponibilidade;
+        return this;
+    }
 }

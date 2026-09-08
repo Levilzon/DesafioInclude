@@ -2,6 +2,6 @@ namespace AdministrandoAluguelDeVeiculos.Core.Enums;
 
 public enum EStatusDisponibilidade
 {
-    Disponivel = 1,
-    Alugado = 2
+    disponivel = 1,
+    alugado = 2
 }

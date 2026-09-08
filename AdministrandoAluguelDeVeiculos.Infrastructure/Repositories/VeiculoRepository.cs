@@ -28,4 +28,15 @@ public class VeiculoRepository : IVeiculosRepository
         var veiculos = await _dbcontext.Veiculos.ToListAsync();
         return veiculos;
     }
+
+    public async Task<Veiculo> BuscarVeiculoPorIdAsync(Guid id)
+    {
+        var veiculo = await _dbcontext.Veiculos.FirstOrDefaultAsync(v => v.IdVeiculo == id);
+        return veiculo;
+    }
+
+    public Task SalvarMudancasAsync()
+    {
+        return _dbcontext.SaveChangesAsync();
+    }
 }

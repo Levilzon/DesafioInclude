@@ -1,4 +1,3 @@
-using AdministrandoAluguelDeVeiculos.Core.Entities;
 using AdministrandoAluguelDeVeiculos.Core.Interface.Application;
 using AdministrandoAluguelDeVeiculos.Core.Interface.Notifications;
 using AdministrandoAluguelDeVeiculos.Core.Models.InputModels;

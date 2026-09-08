@@ -17,13 +17,13 @@ public class ClienteAtualizarApplication : IClienteAtualizarApplication
     {
         var cliente = await _clienteRepository.BuscarClientePorIdAsync(id);
         if (cliente == null)
-            throw new NullReferenceException("Cliente não encontrado ");
+            throw new NullReferenceException("Cliente não encontrado!");
         cliente
             .SetClienteNome(clienteAtualizarInputModel.ClienteNome)
             .SetSobreNome(clienteAtualizarInputModel.ClienteSobrenome)
             .SetClienteEmail(clienteAtualizarInputModel.ClienteEmail)
             .SetClienteContato(clienteAtualizarInputModel.ClienteContato);
-        await _clienteRepository.SaveChangesAsync();
+        await _clienteRepository.SalvarMudancasClienteAsync();
 
     }
 }

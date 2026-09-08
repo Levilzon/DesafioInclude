@@ -12,6 +12,8 @@ public static class  ApplicationModule
     {
         services.AddScoped<ICadastrarVeiculoApplication, CadastrarVeiculoApplication>();
         services.AddScoped<IListarTodosOsVeiculosApplication, ListarTodosOsVeiculosApplication>();
+        services.AddScoped<IVeiculoAtualizarApplication, VeiculoAtualizarApplication>();
+        services.AddScoped<IBuscarVeiculoPorIdApplication, BuscarVeiculoPorIdApplication>();
         services.AddScoped<ICadastrarClienteApplication, CadastrarClienteApplication>();
         services.AddScoped<IListarTodosOsClientesApplication, ListarTodosOsClientesApplication>();
         services.AddScoped<IBuscarClientePorIdApplication, BuscarClientesPorIdApplication>();

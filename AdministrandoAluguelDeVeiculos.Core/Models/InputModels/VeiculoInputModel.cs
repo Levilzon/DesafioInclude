@@ -4,17 +4,20 @@ namespace AdministrandoAluguelDeVeiculos.Core.Models.InputModels;
 
 public class VeiculoInputModel
 {
-        public VeiculoInputModel(string marcaVeiculo, string modeloVeiculo, int ano, string placa, double valorDiaria)
+        public VeiculoInputModel(string marcaVeiculo, string modeloVeiculo, int ano, string placa, double valorDiaria,
+                EStatusDisponibilidade statusDisponibilidade)
         {
                 MarcaVeiculo = marcaVeiculo;
                 ModeloVeiculo = modeloVeiculo;
                 Ano = ano;
                 Placa = placa;
                 ValorDiaria = valorDiaria;
-                StatusDisponibilidade = EStatusDisponibilidade.Disponivel;
+                StatusDisponibilidade = EStatusDisponibilidade.disponivel;
         }
-        
-        
+
+     
+
+
         public string MarcaVeiculo { get;  }
         
         public string ModeloVeiculo { get; } 

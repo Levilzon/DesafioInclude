@@ -13,7 +13,7 @@ public class VeiculoViewModel
         Ano = ano;
         Placa = placa;
         ValorDiaria = valorDiaria;
-        StatusDisponibilidade = EStatusDisponibilidade.Disponivel;
+        StatusDisponibilidade = EStatusDisponibilidade.disponivel;
     }
     
     public Guid IdVeiculo { get;}

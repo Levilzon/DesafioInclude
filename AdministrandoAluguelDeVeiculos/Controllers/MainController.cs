@@ -1,4 +1,3 @@
-using AdministrandoAluguelDeVeiculos.Core.Entities;
 using AdministrandoAluguelDeVeiculos.Core.Interface.Notifications;
 using AdministrandoAluguelDeVeiculos.Core.Models.ViewModel;
 using Microsoft.AspNetCore.Mvc;
