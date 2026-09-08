@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using AdministrandoAluguelDeVeiculos.Core.Entities;
 using AdministrandoAluguelDeVeiculos.Core.Interface.Repositories;
@@ -9,13 +10,12 @@ namespace AdministrandoAluguelDeVeiculos.Infrastructure.Repositories;
 
 public class ClienteRepository : IClienteRepository
 {
-    AdministrandoAluguelDeVeiculosContext _dbContext;
+    private readonly AdministrandoAluguelDeVeiculosContext _dbContext;
 
     public ClienteRepository(AdministrandoAluguelDeVeiculosContext dbContext)
     {
         _dbContext = dbContext;
     }
-    
     
     public async Task<Guid> CadastrarClienteAsync(Cliente cliente)
     {
@@ -26,18 +26,21 @@ public class ClienteRepository : IClienteRepository
 
     public async Task<IEnumerable<Cliente>> ListarTodosOsClientesAsync()
     {
-        var cliente = await _dbContext.Clientes.ToListAsync();
-        return cliente;
+        return await _dbContext.Clientes.ToListAsync();
     }
  
     public async Task<Cliente> BuscarClientePorIdAsync(Guid id)
     {
-        var cliente = await _dbContext.Clientes.FirstOrDefaultAsync(c => c.IdCliente == id);
-        return cliente;
+        return await _dbContext.Clientes.FirstOrDefaultAsync(c => c.IdCliente == id);
     }
 
-    public Task SalvarMudancasClienteAsync()
+    public async Task<Cliente> ObterPorIdAsync(Guid idCliente, CancellationToken ct)
     {
-        throw new NotImplementedException();
+        return await _dbContext.Clientes.FirstOrDefaultAsync(c => c.IdCliente == idCliente, ct);
+    }
+
+    public async Task SalvarMudancasClienteAsync()
+    {
+        await _dbContext.SaveChangesAsync();
     }
 }

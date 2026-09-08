@@ -1,23 +1,18 @@
-using AdministrandoAluguelDeVeiculos.Core.Enums;
-
 namespace AdministrandoAluguelDeVeiculos.Core.Models.InputModels;
 
 public class VeiculoInputModel
 {
         public VeiculoInputModel(string marcaVeiculo, string modeloVeiculo, int ano, string placa, double valorDiaria,
-                EStatusDisponibilidade statusDisponibilidade)
+                string statusDisponibilidade)
         {
                 MarcaVeiculo = marcaVeiculo;
                 ModeloVeiculo = modeloVeiculo;
                 Ano = ano;
                 Placa = placa;
                 ValorDiaria = valorDiaria;
-                StatusDisponibilidade = EStatusDisponibilidade.disponivel;
+                StatusDisponibilidade = statusDisponibilidade;
         }
-
-     
-
-
+        
         public string MarcaVeiculo { get;  }
         
         public string ModeloVeiculo { get; } 
@@ -28,6 +23,6 @@ public class VeiculoInputModel
 
         public double ValorDiaria { get; }
 
-        public EStatusDisponibilidade StatusDisponibilidade { get;  }
+        public string StatusDisponibilidade { get;  }
     
 }

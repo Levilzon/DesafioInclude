@@ -1,5 +1,6 @@
 using AdministrandoAluguelDeVeiculos.Application.Applications;
 using AdministrandoAluguelDeVeiculos.Application.Notifications;
+using AdministrandoAluguelDeVeiculos.Application.Validators;
 using AdministrandoAluguelDeVeiculos.Core.Interface.Application;
 using AdministrandoAluguelDeVeiculos.Core.Interface.Notifications;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +19,9 @@ public static class  ApplicationModule
         services.AddScoped<IListarTodosOsClientesApplication, ListarTodosOsClientesApplication>();
         services.AddScoped<IBuscarClientePorIdApplication, BuscarClientesPorIdApplication>();
         services.AddScoped<IClienteAtualizarApplication, ClienteAtualizarApplication>();
+        services.AddScoped<IAluguelApplication, AluguelApplication>();
         services.AddScoped<INotificador, Notificador>();
         return services;
     }
 }
+

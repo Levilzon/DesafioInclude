@@ -8,4 +8,6 @@ public interface IClienteRepository
     Task<IEnumerable<Cliente>> ListarTodosOsClientesAsync();
     Task<Cliente?> BuscarClientePorIdAsync(Guid id);
     Task SalvarMudancasClienteAsync();
+    Task<Cliente> ObterPorIdAsync(Guid idCliente, CancellationToken ct);
+
 }

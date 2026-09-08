@@ -8,4 +8,9 @@ public interface IVeiculosRepository
     Task<IEnumerable<Veiculo>> ListarVeiculosAsync();
     Task<Veiculo> BuscarVeiculoPorIdAsync(Guid id);
     Task SalvarMudancasAsync();
+    Task<Veiculo?> ObterPorPlacaOuIdAsync(string placa, CancellationToken ct);
+    Task<Veiculo?> ObterPorIdAsync(Guid id, CancellationToken ct);
+    Task<Veiculo?> ObterPorPlacaAsync(string placa, CancellationToken ct);
+    void Atualizar(Veiculo veiculo); 
+    
 }

@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+SELECT * FROM veiculos;
+reate database Administrando_aluguel_veiculos;
+
+Create type status_disponibilidade as enum('alugado', 'disponivel');
+
+Create table veiculos(
+    id_veiculo  primary key, 
+    marca_veiculo varchar(30) not null,
+    modelo_veiculo varchar(30) not null,
+    ano integer not null,
+    placa varchar(10) unique not null,
+    valor_diaria DOUBLE PRECISION not null,
+    status status_disponibilidade default 'disponivel'
+
+);
+
+create table cliente(
+    id_cliente UUID  primary key DEFAULT gen_random_uuid(),
+    cliente_nome varchar(40) not null, 
+    cliente_sobrenome varchar(40) not null,
+    cliente_senha varchar(20) not null,
+    cliente_email varchar(40) not null UNIQUE,
+    cliente_contato varchar (30) not null
+);
+
+CREATE TABLE aluguel(
+id_aluguel UUID primary key DEFAULT gen_random_uuid(),
+id_cliente UUID not null references cliente(id_cliente),
+id_veiculo UUID not null references veiculos(id_veiculo),
+data_inicial DATE not null,
+data_final DATE not null
+);
+
+ALTER TABLE veiculos ALTER COLUMN status TYPE text USING status::text;
+ALTER TABLE cliente ADD CONSTRAINT cliente_email_unique UNIQUE (cliente_email);
+
+select * from veiculos;
+
+select * from cliente;
+
+select * from aluguel;

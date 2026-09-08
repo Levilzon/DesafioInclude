@@ -1,3 +1,4 @@
+using System;
 using AdministrandoAluguelDeVeiculos.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -28,7 +29,7 @@ public class VeiculoConfiguration : IEntityTypeConfiguration<Veiculo>
         entity.Property(e => e.ValorDiaria).HasColumnName("valor_diaria");
         entity.Property(e => e.StatusDisponibilidade)
             .HasColumnName("status")
-            .HasConversion<string>()
+            .HasConversion<string>() 
             .HasDefaultValueSql("disponivel")
             .IsRequired();
     }

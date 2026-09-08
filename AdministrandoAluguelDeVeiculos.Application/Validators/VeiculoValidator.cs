@@ -1,5 +1,4 @@
 using System.Data;
-using AdministrandoAluguelDeVeiculos.Core.Enums;
 using AdministrandoAluguelDeVeiculos.Core.Models.InputModels;
 using FluentValidation;
 namespace AdministrandoAluguelDeVeiculos.Application.Validators;

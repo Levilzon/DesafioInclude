@@ -16,8 +16,6 @@ public class Cliente
         ClienteContato = clienteContato;
     }
     
-    
-    
     public Guid IdCliente { get;  }
     public string ClienteNome { get; private set; }
     public string ClienteSobrenome { get; private set; }
@@ -48,4 +46,6 @@ public class Cliente
         ClienteContato = clienteContato;
         return this;
     }
+    
+    public ICollection<Aluguel> Alugueis { get; private set; } = new List<Aluguel>();
 }
