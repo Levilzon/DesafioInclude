@@ -1,7 +1,6 @@
 using AdministrandoAluguelDeVeiculos.Core.Interface.Repositories;
 using AdministrandoAluguelDeVeiculos.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AdministrandoAluguelDeVeiculos.Infrastructure;

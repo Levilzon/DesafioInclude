@@ -6,7 +6,7 @@
 
 
 SELECT * FROM veiculos;
-reate database Administrando_aluguel_veiculos;
+Create database Administrando_aluguel_veiculos;
 
 Create type status_disponibilidade as enum('alugado', 'disponivel');
 
